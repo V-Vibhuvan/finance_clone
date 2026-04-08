@@ -1,0 +1,198 @@
+/* ===== GLOBAL RESET ===== */
+body {
+  background-color: #f5f7fa;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+/* ===== CONTAINER SPACING ===== */
+.container {
+  max-width: 1200px;
+}
+
+/* ===== CARD SYSTEM (ZERODHA STYLE) ===== */
+.app-card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.app-shadow {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== PAGE TITLE ===== */
+.page-title {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ===== KPI CARDS ===== */
+.kpi-card {
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.kpi-card:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== TABLE CLEAN ===== */
+.table-clean th {
+  font-size: 13px;
+  font-weight: 500;
+  color: #777;
+}
+
+.table-clean td {
+  font-size: 14px;
+}
+
+/* ===== PROFIT / LOSS COLORS ===== */
+.text-profit {
+  color: #28a745;
+  font-weight: 500;
+}
+
+.text-loss {
+  color: #dc3545;
+  font-weight: 500;
+}
+
+/* ===== NAVBAR ===== */
+.navbar-clean {
+  background: #ffffff !important;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.navbar-clean .nav-link {
+  color: #555 !important;
+}
+
+.navbar-clean .nav-link:hover {
+  color: #387ed1 !important;
+}
+
+/* ===== BUTTON STYLE ===== */
+.btn-primary {
+  background-color: #387ed1;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #2f6fcc;
+}
+
+/* ===== INPUT FOCUS ===== */
+.form-control:focus {
+  border-color: #387ed1;
+  box-shadow: none;
+}
+
+/* ===== AUTH CARD ===== */
+.auth-card {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+/* ===== CHAT BOT (AI) ===== */
+.ai-chat-window {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 360px;
+  height: 480px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.ai-header {
+  background: #387ed1;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ai-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.ai-msg {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  max-width: 75%;
+}
+
+.ai-user {
+  background: #387ed1;
+  color: white;
+  margin-left: auto;
+}
+
+.ai-bot {
+  background: #f1f1f1;
+  color: black;
+}
+
+.ai-input-box {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+/* ===== FLOAT BUTTON ===== */
+.ai-float-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #387ed1;
+  color: white;
+  padding: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.ai-float-btn:hover {
+  transform: scale(1.1);
+}
+
+/* ==== AI INSIGHT */
+.ai-insight {
+  border-left: 3px solid #387ed1;
+}
+
+/* Chart Cards */
+.chart-card {
+  height: 100%;
+  padding: 16px;
+}
+
+.chart-card:hover {
+  transform: translateY(-2px);
+  transition: 0.2s ease;
+}
+
+/* Fix chart size */
+.chart-card canvas {
+  max-height: 300px !important;
+}
+
+/* Responsive fix */
+@media (max-width: 768px) {
+  .chart-card canvas {
+    max-height: 250px !important;
+  }
+}
+
