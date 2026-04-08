@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:3002/api", 
+  baseURL: "https://finance-clone-4azm.onrender.com/api", 
 });
 
 API.interceptors.request.use((req) => {

@@ -21,7 +21,7 @@ export default function AIChatWindow({ onClose }){
 
         try{
             const res = await axios.post(
-                `http://localhost:3002/api/ai/chat`,
+                `https://finance-clone-4azm.onrender.com/api/ai/chat`,
                 {query: message},
                 {
                     headers: {
