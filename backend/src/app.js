@@ -11,6 +11,7 @@ const portfolioRoutes = require("./routes/portfolioRoutes");
 const walletRoutes = require("./routes/walletRoutes");
 const analyticsRoutes = require("./routes/analyticsRoutes");
 const aiRoutes = require("./routes/aiRoutes");
+const mlRoutes = require("./routes/mlRoutes");
 
 
 
@@ -27,6 +28,7 @@ app.use("/api/portfolio", portfolioRoutes);
 app.use("/api/wallet", walletRoutes);
 app.use("/api/analytics", analyticsRoutes);
 app.use("/api/ai", aiRoutes);
+app.use("/", mlRoutes);
 
 app.use((req, res, next) => {
     res.status(404).json({
